@@ -1,100 +1,149 @@
 body {
-font-family: Georgia, serif;
+font-family: 'Georgia', serif;
 margin: 0;
-background: #f5f1ea;
-color: #222;
+background: #f7f4ef;
+color: #1a1a1a;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 .nav {
 display: flex;
 justify-content: space-between;
-padding: 20px 40px;
-background: white;
+padding: 24px 60px;
+background: rgba(255,255,255,0.9);
 position: sticky;
 top: 0;
 z-index: 1000;
-border-bottom: 1px solid #ddd;
+backdrop-filter: blur(10px);
 }
 
 .logo {
-font-size: 20px;
+font-size: 22px;
 font-weight: bold;
+letter-spacing: 1px;
 }
 
 .menu a {
 text-decoration: none;
 color: #333;
-margin-left: 20px;
-font-weight: 600;
+margin-left: 30px;
+font-weight: 500;
+transition: 0.3s;
 }
 
-/* HERO */
+.menu a:hover {
+opacity: 0.6;
+}
+
+/* ================= HERO ================= */
 .hero {
 display: flex;
 align-items: center;
-padding: 60px;
+padding: 100px 80px 60px 80px;
+max-width: 1200px;
+margin: auto;
 }
 
 .hero img {
-width: 200px;
-margin-right: 40px;
-border-radius: 10px;
+width: 220px;
+height: 220px;
+object-fit: cover;
+border-radius: 20px;
+margin-right: 60px;
+box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
 .hero-text h1 {
-font-size: 40px;
+font-size: 48px;
 margin: 0;
+letter-spacing: -1px;
 }
 
 .hero-text h2 {
 margin: 10px 0;
+font-weight: 500;
+color: #555;
 }
 
-/* SECTIONS */
+.hero-text p {
+max-width: 500px;
+line-height: 1.6;
+color: #666;
+}
+
+/* ================= SECTIONS ================= */
 .section {
-padding: 60px;
+padding: 80px;
+max-width: 1200px;
+margin: auto;
 }
 
-/* METRICS IMAGE */
+/* ================= METRICS (FIXED PREMIUM) ================= */
 .metrics {
 width: 100%;
-border-radius: 10px;
+max-height: 420px;   /* 🔥 THIS FIXES YOUR ISSUE */
+object-fit: cover;
+border-radius: 20px;
+display: block;
+margin: auto;
+box-shadow: 0 20px 50px rgba(0,0,0,0.1);
 }
 
-/* WORK GRID */
+/* ================= WORK ================= */
+.section h2 {
+font-size: 28px;
+margin-bottom: 30px;
+}
+
+/* GRID */
 .work-grid {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 gap: 30px;
 }
 
+/* CARD */
 .work-card {
 background: white;
-padding: 20px;
-border-radius: 10px;
-transition: 0.3s;
+border-radius: 16px;
+overflow: hidden;
+transition: all 0.3s ease;
+box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .work-card:hover {
-transform: translateY(-5px);
+transform: translateY(-6px);
+box-shadow: 0 20px 50px rgba(0,0,0,0.08);
 }
 
 .work-card img {
 width: 100%;
-height: 200px;
+height: 220px;
 object-fit: cover;
 }
 
 .work-card h3 {
-margin: 10px 0 5px;
+padding: 15px 20px 5px;
+margin: 0;
 }
 
 .work-card p {
+padding: 0 20px 20px;
 font-size: 14px;
+color: #666;
 }
 
-/* CONTACT */
+/* ================= CONTACT ================= */
 .contact {
 text-align: center;
+padding-bottom: 100px;
+}
+
+.contact h2 {
+font-size: 32px;
+}
+
+.contact p {
+font-size: 18px;
+color: #555;
 }
