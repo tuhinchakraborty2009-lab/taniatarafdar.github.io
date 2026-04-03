@@ -4,9 +4,6 @@
 <head>
   <title>Tania Tarafdar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- STYLE -->
-
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,9 +22,7 @@
 <!-- ================= HERO ================= -->
 
 <div class="section hero">
-  <!-- 🔴 EDIT ONLY IF FILE NAME DIFFERENT -->
-  <img src="images
-/Untitled design.png">
+  <img src="images/Untitled design.png">
 
   <div class="hero-text">
     <h1 id="name"></h1>
@@ -38,11 +33,41 @@
   </div>
 </div>
 
-<!-- ================= METRICS ================= -->
+<!-- ================= STORY SECTION ================= -->
 
-<div class="section">
-  <!-- 🔴 EDIT ONLY IF FILE NAME DIFFERENT -->
-  <img src="images/WhatsApp Image 2026-04-03 at 14.34.25.jpeg" class="metrics">
+<div class="section story">
+
+  <div class="story-text">
+    <h3 class="tag">SCALING | DEFINING | TRANSFORMING</h3>
+
+```
+<h2 class="story-title">MY STORY</h2>
+
+<p>
+  They say a girl with a Master’s in Bioinformatics belongs in a lab,
+  peering through a microscope, chasing a PhD. It’s the "sensible" path,
+  the predictable one. But, I’ve never much cared for predictable.
+</p>
+
+<p>
+  Just as I was finishing my MSc, at that frantic final-month crossroads
+  where most are buried in research papers, I chose to follow a different
+  pulse: my love for the written word.
+</p>
+
+<p>
+  What began as a beautifully uncertain start quickly blossomed into a
+  career that reads like a travelogue of prestige — from BBC to Curly Tales,
+  Travel + Leisure and Lifestyle Asia.
+</p>
+```
+
+  </div>
+
+  <div class="story-image">
+    <img src="images/WhatsApp Image 2026-04-03 at 14.34.25.jpeg">
+  </div>
+
 </div>
 
 <!-- ================= WORK ================= -->
@@ -59,26 +84,20 @@
   <p id="email"></p>
 </div>
 
-<!-- DATA FILES -->
+<!-- CONFIG + DATA -->
 
 <script src="config.js"></script>
 
 <script src="data.js"></script>
 
-<!-- ================= SCRIPT ================= -->
-
 <script>
-
-// TEXT CONTENT
 document.getElementById("name").innerText = CONFIG.name;
 document.getElementById("title").innerText = CONFIG.title;
 document.getElementById("email").innerText = CONFIG.email;
 
-// WORK CARDS
 const container = document.getElementById("work-container");
 
 WORK.forEach(item => {
-
   const div = document.createElement("div");
   div.className = "work-card";
 
@@ -91,9 +110,7 @@ WORK.forEach(item => {
   `;
 
   container.appendChild(div);
-
 });
-
 </script>
 
 </body>
