@@ -1,62 +1,80 @@
 <!DOCTYPE html>
+
 <html>
 <head>
   <title>Tania Tarafdar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="style.css">
+  <!-- STYLE -->
 
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<!-- ================= NAVBAR ================= -->
+
 <div class="nav">
-  <div><b>Tania Tarafdar</b></div>
-  <div>
-    <a href="#">Work</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+  <div class="logo">Tania Tarafdar</div>
+  <div class="menu">
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
   </div>
 </div>
-<!-- HERO -->
+
+<!-- ================= HERO ================= -->
+
 <div class="section hero">
-  <img src="/images/mai_head_shot-removebg-preview.png">
+  <!-- 🔴 EDIT ONLY IF FILE NAME DIFFERENT -->
+  <img src="images/profile.png">
 
   <div class="hero-text">
     <h1 id="name"></h1>
     <h2 id="title"></h2>
-    <p>Blending storytelling and analytics to scale brands across digital and print ecosystems</p>
+    <p>
+      Blending storytelling and analytics to scale brands across digital and print ecosystems
+    </p>
   </div>
 </div>
 
-<!-- METRICS -->
+<!-- ================= METRICS ================= -->
+
 <div class="section">
-  <img src="images
-/WhatsApp Image 2026-04-03 at 14.34.25.jpeg
-" style="width:100%;">
+  <!-- 🔴 EDIT ONLY IF FILE NAME DIFFERENT -->
+  <img src="images/metrics.jpg" class="metrics">
 </div>
 
-<!-- SEO WORK -->
-<div class="section">
+<!-- ================= WORK ================= -->
+
+<div class="section" id="work">
   <h2>High Traffic / SEO Success</h2>
-  <div class="work-grid" id="work"></div>
+  <div class="work-grid" id="work-container"></div>
 </div>
 
-<!-- CONTACT -->
-<div class="section">
+<!-- ================= CONTACT ================= -->
+
+<div class="section contact" id="contact">
   <h2>Let’s Work Together</h2>
   <p id="email"></p>
 </div>
 
+<!-- DATA FILES -->
+
 <script src="config.js"></script>
+
 <script src="data.js"></script>
+
+<!-- ================= SCRIPT ================= -->
 
 <script>
 
+// TEXT CONTENT
 document.getElementById("name").innerText = CONFIG.name;
 document.getElementById("title").innerText = CONFIG.title;
 document.getElementById("email").innerText = CONFIG.email;
 
-const container = document.getElementById("work");
+// WORK CARDS
+const container = document.getElementById("work-container");
 
 WORK.forEach(item => {
 
