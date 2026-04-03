@@ -1,11 +1,11 @@
 body {
-font-family: 'Georgia', serif;
+font-family: Georgia, serif;
 margin: 0;
 background: #f7f4ef;
 color: #1a1a1a;
 }
 
-/* ================= NAVBAR ================= */
+/* NAVBAR */
 .nav {
 display: flex;
 justify-content: space-between;
@@ -14,13 +14,12 @@ background: rgba(255,255,255,0.9);
 position: sticky;
 top: 0;
 z-index: 1000;
-backdrop-filter: blur(10px);
+border-bottom: 1px solid #ddd;
 }
 
 .logo {
 font-size: 22px;
 font-weight: bold;
-letter-spacing: 1px;
 }
 
 .menu a {
@@ -28,18 +27,13 @@ text-decoration: none;
 color: #333;
 margin-left: 30px;
 font-weight: 500;
-transition: 0.3s;
 }
 
-.menu a:hover {
-opacity: 0.6;
-}
-
-/* ================= HERO ================= */
+/* HERO */
 .hero {
 display: flex;
 align-items: center;
-padding: 100px 80px 60px 80px;
+padding: 100px 80px 60px;
 max-width: 1200px;
 margin: auto;
 }
@@ -56,64 +50,81 @@ box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 .hero-text h1 {
 font-size: 48px;
 margin: 0;
-letter-spacing: -1px;
 }
 
 .hero-text h2 {
 margin: 10px 0;
-font-weight: 500;
 color: #555;
 }
 
 .hero-text p {
 max-width: 500px;
-line-height: 1.6;
 color: #666;
 }
 
-/* ================= SECTIONS ================= */
+/* SECTION BASE */
 .section {
 padding: 80px;
 max-width: 1200px;
 margin: auto;
 }
 
-/* ================= METRICS (FIXED PREMIUM) ================= */
-.metrics {
+/* STORY SECTION */
+.story {
+display: grid;
+grid-template-columns: 1.1fr 1fr;
+gap: 60px;
+align-items: center;
+}
+
+.tag {
+font-size: 14px;
+letter-spacing: 2px;
+color: #555;
+margin-bottom: 20px;
+}
+
+.story-title {
+font-size: 32px;
+border: 1px solid #333;
+display: inline-block;
+padding: 10px 20px;
+margin-bottom: 30px;
+}
+
+.story-text p {
+line-height: 1.8;
+margin-bottom: 20px;
+}
+
+.story-image img {
 width: 100%;
-max-height: 420px;   /* 🔥 THIS FIXES YOUR ISSUE */
-object-fit: cover;
 border-radius: 20px;
-display: block;
-margin: auto;
 box-shadow: 0 20px 50px rgba(0,0,0,0.1);
 }
 
-/* ================= WORK ================= */
+/* WORK */
 .section h2 {
 font-size: 28px;
 margin-bottom: 30px;
 }
 
-/* GRID */
 .work-grid {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 gap: 30px;
 }
 
-/* CARD */
 .work-card {
 background: white;
 border-radius: 16px;
 overflow: hidden;
-transition: all 0.3s ease;
+transition: 0.3s;
 box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .work-card:hover {
 transform: translateY(-6px);
-box-shadow: 0 20px 50px rgba(0,0,0,0.08);
 }
 
 .work-card img {
@@ -133,17 +144,7 @@ font-size: 14px;
 color: #666;
 }
 
-/* ================= CONTACT ================= */
+/* CONTACT */
 .contact {
 text-align: center;
-padding-bottom: 100px;
-}
-
-.contact h2 {
-font-size: 32px;
-}
-
-.contact p {
-font-size: 18px;
-color: #555;
 }
