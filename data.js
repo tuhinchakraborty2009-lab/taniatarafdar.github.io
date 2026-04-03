@@ -1,12 +1,12 @@
 const WORK = [
   {
-    title: "Princess Diaries 3",
-    link: "PASTE_LINK_HERE",
+    title: "Under Fjords",
+    link: "https://www.travelandleisureasia.com/sea/trips/cruises/everything-about-fjord-cruise-from-bergen-norway/",
     description: "Leveraging cultural trends to drive deep engagement"
   },
   {
     title: "Labubu vs Lafufu",
-    link: "PASTE_LINK_HERE",
+    link: "https://www.prestigeonline.com/hk/lifestyle/culture-plus-entertainment/how-to-spot-the-diffrence-between-labubu-and-lafufu/",
     description: "Expert guide bridging viral trends and consumer insight"
   }
 ];
