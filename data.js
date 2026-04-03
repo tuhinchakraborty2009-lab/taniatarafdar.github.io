@@ -1,12 +1,12 @@
 const WORK = [
   {
-    title: "The Princess Diaries 3",
-    image: "images/work1.jpg",
-    description: "Leveraging cultural trends to drive engagement"
+    title: "Princess Diaries 3",
+    link: "PASTE_LINK_HERE",
+    description: "Leveraging cultural trends to drive deep engagement"
   },
   {
     title: "Labubu vs Lafufu",
-    image: "images/work2.jpg",
-    description: "Expert guide bridging trends and authenticity"
+    link: "PASTE_LINK_HERE",
+    description: "Expert guide bridging viral trends and consumer insight"
   }
 ];
