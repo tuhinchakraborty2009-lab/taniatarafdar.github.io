@@ -3,13 +3,70 @@
 <head>
   <title>Tania Tarafdar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body style="font-family: Arial; text-align: center; padding: 100px;">
+<body>
 
-  <h1>Tania Tarafdar</h1>
-  <p>Editorial Growth Architect</p>
-  <p>Website coming soon</p>
+<!-- HERO -->
+<div class="section hero">
+  <img src="images/profile.png">
+
+  <div class="hero-text">
+    <h1 id="name"></h1>
+    <h2 id="title"></h2>
+    <p>Blending storytelling and analytics to scale brands across digital and print ecosystems</p>
+  </div>
+</div>
+
+<!-- METRICS -->
+<div class="section">
+  <img src="images/metrics.jpg" style="width:100%;">
+</div>
+
+<!-- SEO WORK -->
+<div class="section">
+  <h2>High Traffic / SEO Success</h2>
+  <div class="work-grid" id="work"></div>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+  <h2>Let’s Work Together</h2>
+  <p id="email"></p>
+</div>
+
+<script src="config.js"></script>
+<script src="data.js"></script>
+
+<script>
+
+document.getElementById("name").innerText = CONFIG.name;
+document.getElementById("title").innerText = CONFIG.title;
+document.getElementById("email").innerText = CONFIG.email;
+
+const container = document.getElementById("work");
+
+WORK.forEach(item => {
+
+  const div = document.createElement("div");
+  div.className = "work-card";
+
+  div.innerHTML = `
+    <a href="${item.link}" target="_blank">
+      <img src="https://image.thum.io/get/${item.link}">
+      <h3>${item.title}</h3>
+      <p>${item.description}</p>
+    </a>
+  `;
+
+  container.appendChild(div);
+
+});
+
+</script>
 
 </body>
 </html>
